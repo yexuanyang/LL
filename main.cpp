@@ -408,7 +408,7 @@ void analysisProcess() {
     std::string buffer;
     buffer = formatStr(initialStr);
     buffer.append(1, '$');
-    std::cout << buffer << std::endl;
+    std::cout << "format string is: " << std::endl << buffer << std::endl;
     stateStack.push(std::string(1,'$'));
     stateStack.push(initialKey);
     std::string::iterator strIt = buffer.begin();
